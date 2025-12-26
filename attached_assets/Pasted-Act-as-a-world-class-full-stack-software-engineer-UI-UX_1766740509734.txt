@@ -1,0 +1,229 @@
+Act as a world-class full-stack software engineer, UI/UX designer, and creative technologist who builds award-winning developer portfolios for top-tier engineers.
+
+Objective: Build a highly animated, realistic, immersive personal portfolio website for a Full-Stack Software Developer (Fresher) that stuns recruiters and clearly shows strong engineering ability.
+
+👤 DEVELOPER PROFILE (CONTEXT)
+
+Name: Nagavarshith Siddoju
+
+Title: Full-Stack Software Developer
+
+Education: B.Tech CSE (2026)
+
+Experience Level: Fresher with strong real-world projects
+
+Primary Focus:
+
+Full-Stack Development
+
+Backend logic & system thinking
+
+Clean APIs & scalable architecture
+
+Target Roles:
+
+Software Engineer
+
+Full-Stack Developer
+
+Backend-leaning SDE
+
+🛠️ TECH STACK (STRICT)
+Frontend
+
+React (Vite or Next.js)
+
+Tailwind CSS
+
+Framer Motion
+
+GSAP
+
+Backend (Showcase Only)
+
+Node.js / Express
+
+REST APIs
+
+Database integration (SQL / NoSQL)
+
+Visual Enhancement
+
+Three.js / React Three Fiber
+(subtle, realistic 3D — not game-like)
+
+🎨 DESIGN PRINCIPLES
+
+Modern, premium developer aesthetic
+
+Animated but professional
+
+Subtle 3D depth (lighting, parallax, motion)
+
+Smooth scroll & hover micro-interactions
+
+Dark theme first (engineering vibe)
+
+Performance-first (no unnecessary bloat)
+
+🧩 WEBSITE STRUCTURE
+1️⃣ HERO SECTION
+
+Animated headline:
+
+“Hi, I’m Varshith — a Full-Stack Software Developer building reliable and scalable web applications.”
+
+Sub-text highlighting:
+
+Frontend craftsmanship
+
+Backend logic
+
+Floating 3D element (abstract geometry / code-inspired object)
+
+CTA buttons:
+
+View Projects
+
+Download Resume
+
+Scroll hint animation
+
+2️⃣ ABOUT ME
+
+Short, strong paragraphs
+
+Emphasize:
+
+End-to-end development mindset
+
+Strong fundamentals
+
+Love for building real products
+
+Reveal animations on scroll
+
+3️⃣ SKILLS
+
+Animated skill cards grouped as:
+
+Languages: Java, Python, SQL
+
+Frontend: React, HTML, CSS, Tailwind
+
+Backend: Node.js, Express, REST APIs
+
+Databases: MySQL / MongoDB
+
+ML Basics: CNN, LSTM
+
+Tools: Git, GitHub
+
+Hover animations + icons + smooth transitions
+
+⭐ 4️⃣ PROJECTS (ONLY TWO — DEEP CASE STUDIES)
+🔹 Project 1: Placement Diary (Flagship Project)
+
+Description:
+A full-stack web application that helps students track job applications, interview experiences, outcomes, and preparation notes in one centralized platform.
+
+Show as a Case Study:
+
+Problem statement
+
+System design (frontend ↔ backend flow)
+
+Key features
+
+Tech stack
+
+Challenges & solutions
+
+Impact & future improvements
+
+UI Behavior:
+
+Animated project card
+
+Click → expanded case-study section
+
+Buttons:
+
+GitHub
+
+Live Demo
+
+🔹 Project 2: EduGenius
+
+Description:
+A smart education platform that enhances learning through structured content, intelligent insights, and user-centric design.
+
+Focus on:
+
+Full-stack architecture
+
+Backend logic
+
+Data handling
+
+Clean UI flows
+
+Same polished case-study format as Placement Diary.
+
+⚠️ IMPORTANT
+
+Do NOT add filler projects.
+These two must feel production-grade and mature.
+
+5️⃣ ACHIEVEMENTS
+
+NTSE State Rank 11
+
+Research paper: Sign Language Recognition (CNN + RF)
+
+Hackathons & workshops
+
+Animated timeline or counters
+
+6️⃣ CONTACT
+
+Animated contact form
+
+GitHub & LinkedIn focus
+
+Message:
+
+“Open to full-stack software development opportunities”
+
+✨ OPTIONAL WOW FACTORS
+
+Parallax background
+
+Cursor magnet effect
+
+Page transition animations
+
+Dark / Light theme toggle
+
+Reduced-motion support
+
+📦 OUTPUT EXPECTATION
+
+Production-ready React code
+
+Clean folder structure
+
+Modular components
+
+Tailwind best practices
+
+Well-documented animation logic
+
+Easy deployment (Vercel / Netlify)
+
+🎯 FINAL VISION
+
+This portfolio should make recruiters think:
+“This is a real full-stack engineer, not just a fresher.”
+
+Build it like it will be reviewed by top product companies and serious startups.
