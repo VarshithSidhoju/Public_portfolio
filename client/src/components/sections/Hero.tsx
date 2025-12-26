@@ -1,14 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, Terminal } from "lucide-react";
-import Scene from "../3d/Scene";
 import { motion } from "framer-motion";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-background">
-      {/* 3D Background */}
-      <Scene />
-      
       <div className="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <motion.div 
@@ -59,9 +55,38 @@ export function Hero() {
           </motion.div>
         </div>
         
-        {/* The 3D scene takes up the right side visually but is absolutely positioned for full coverage. 
-            We leave this empty to push content left or use it for interaction space. */}
-        <div className="hidden md:block h-[500px]"></div>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8, x: 20 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          className="relative flex justify-center items-center"
+        >
+          {/* Subtle Glow Effect */}
+          <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-75 -z-10" />
+          
+          <motion.div 
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+            className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border border-white/10 shadow-2xl group"
+          >
+            {/* Placeholder Image Slot */}
+            {/* REPLACE THE SRC BELOW WITH YOUR ACTUAL PROFILE IMAGE PATH */}
+            <div className="w-full h-full bg-muted/30 flex items-center justify-center relative">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                alt="Nagavarshith Siddoju"
+                className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none" />
+              <div className="absolute bottom-6 left-6 font-mono text-xs text-primary bg-background/50 backdrop-blur-sm px-2 py-1 rounded border border-primary/20">
+                profile.jpg
+              </div>
+            </div>
+            
+            {/* Border Accent */}
+            <div className="absolute inset-0 border border-primary/10 rounded-2xl group-hover:border-primary/30 transition-colors pointer-events-none" />
+          </motion.div>
+        </motion.div>
       </div>
       
       {/* Scroll Hint */}
