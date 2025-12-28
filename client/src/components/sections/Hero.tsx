@@ -14,7 +14,7 @@ export function Hero() {
             className="flex items-center gap-2 text-primary font-mono text-sm tracking-widest uppercase bg-primary/10 w-fit px-3 py-1 rounded-full border border-primary/20"
           >
             <Terminal size={14} />
-            <span>Full-Stack Developer</span>
+            <span>Software Developer</span>
           </motion.div>
           
           <motion.h1 
@@ -24,7 +24,7 @@ export function Hero() {
             className="text-5xl md:text-7xl font-heading font-bold leading-tight"
           >
             Hi, I'm <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/50">Varshith</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/50">Nagavarshith</span>
           </motion.h1>
           
           <motion.p 
@@ -48,7 +48,7 @@ export function Hero() {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="rounded-full border-white/10 hover:bg-white/5 hover:text-white font-medium px-8 h-14" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1RIpk3xoaGJI91bgtkFVRwUCGADOumGjN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download Resume <Download className="ml-2 w-5 h-5" />
               </a>
             </Button>
@@ -73,14 +73,11 @@ export function Hero() {
             {/* REPLACE THE SRC BELOW WITH YOUR ACTUAL PROFILE IMAGE PATH */}
             <div className="w-full h-full bg-muted/30 flex items-center justify-center relative">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                src="myProfile.png" 
                 alt="Nagavarshith Siddoju"
                 className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent pointer-events-none" />
-              <div className="absolute bottom-6 left-6 font-mono text-xs text-primary bg-background/50 backdrop-blur-sm px-2 py-1 rounded border border-primary/20">
-                profile.jpg
-              </div>
             </div>
             
             {/* Border Accent */}

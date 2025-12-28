@@ -7,7 +7,8 @@ import {
   Server, 
   Database, 
   Brain, 
-  GitBranch 
+  GitBranch, 
+  BowArrow
 } from "lucide-react";
 
 export function Skills() {
@@ -15,32 +16,33 @@ export function Skills() {
     {
       title: "Languages",
       icon: <Code2 className="w-6 h-6 text-primary" />,
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL"]
+      skills: ["Java", "Python", "SQL", "HTML", "CSS"]
     },
     {
       title: "Frontend",
       icon: <Layout className="w-6 h-6 text-secondary" />,
-      skills: ["React", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion", "GSAP"]
+      skills: ["React", "HTML", "CSS","JavaScript"]
     },
     {
       title: "Backend",
       icon: <Server className="w-6 h-6 text-emerald-400" />,
-      skills: ["Node.js", "Express", "REST APIs", "System Design"]
+      skills: ["Node.js", "Express", "REST APIs"]
     },
     {
       title: "Databases",
       icon: <Database className="w-6 h-6 text-orange-400" />,
-      skills: ["MySQL", "MongoDB", "PostgreSQL"]
-    },
-    {
-      title: "Machine Learning",
-      icon: <Brain className="w-6 h-6 text-pink-400" />,
-      skills: ["CNN", "LSTM", "Python Libraries (Pandas, NumPy)"]
+      skills: ["MySQL", "MongoDB","Firebase"]
     },
     {
       title: "Tools & DevOps",
       icon: <GitBranch className="w-6 h-6 text-blue-400" />,
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Vite"]
+      skills: ["Git", "GitHub", "VS Code","Cursor"]
+    },
+    {
+      title:"Soft Skills",
+      icon: <BowArrow className="w-6 h-6 text-green-400" />,
+      skills:["TeamCollaboration", "Analytical Problem Solving", "Adaptability", "Self-Motivation",
+"Communication","Leadership"]
     }
   ];
 

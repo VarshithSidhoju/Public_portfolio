@@ -1,22 +1,29 @@
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { motion } from "framer-motion";
-import { Trophy, FileText, Code } from "lucide-react";
+import { Trophy, FileText, Code, School, University } from "lucide-react";
 
 export function Achievements() {
   const items = [
     {
-      year: "2024",
+      year: "2026",
+      title: "BTech(CSE)",
+      description: "Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad (CGPA: 8.9)",
+      icon: <University className="w-5 h-5" />,
+      color: "text-purple-400"
+    },
+    {
+      year: "2025",
       title: "Research Paper Published",
-      description: "Sign Language Recognition (CNN + RF) - Presented at International Conference on Computing.",
+      description: "Advancing Sign Language Recognition with CNN and Random Forest for RealTime Accessibility - Presented at  AIP Conference Proceedings",
       icon: <FileText className="w-5 h-5" />,
       color: "text-blue-400"
     },
     {
-      year: "2023",
-      title: "Smart India Hackathon Finalist",
-      description: "Built a blockchain-based land registry system prototype.",
-      icon: <Code className="w-5 h-5" />,
-      color: "text-purple-400"
+      year: "2022",
+      title: "Intermediate(MPC)",
+      description: "Alphores Junior College, Hanumakonda (Marks:988)",
+      icon: <School className="w-5 h-5" />,
+      color: "text-yellow-400"
     },
     {
       year: "2020",

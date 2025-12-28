@@ -7,6 +7,7 @@ import { useState } from "react";
 
 interface ProjectProps {
   title: string;
+  image: string;
   description: string;
   tags: string[];
   links: { demo: string; repo: string };
@@ -18,7 +19,7 @@ interface ProjectProps {
   index: number;
 }
 
-function ProjectCard({ title, description, tags, links, details, index }: ProjectProps) {
+function ProjectCard({ title, image, description, tags, links, details, index }: ProjectProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -50,9 +51,9 @@ function ProjectCard({ title, description, tags, links, details, index }: Projec
           
           <div className="flex gap-4 pt-4">
             <Button variant="default" className="gap-2 rounded-full" asChild>
-              <a href={links.demo} target="_blank" rel="noopener noreferrer">
+              {/* <a href={links.demo} target="_blank" rel="noopener noreferrer">
                 Live Demo <ExternalLink className="w-4 h-4" />
-              </a>
+              </a> */}
             </Button>
             <Button variant="outline" className="gap-2 rounded-full border-white/10 hover:bg-white/5" asChild>
               <a href={links.repo} target="_blank" rel="noopener noreferrer">
@@ -72,9 +73,8 @@ function ProjectCard({ title, description, tags, links, details, index }: Projec
         {/* Abstract Visualization Placeholder - Could be an image or interactive element */}
         <div className="relative h-full min-h-[300px] bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-white/5 flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]" />
-          <div className="text-center p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-            <h4 className="text-6xl font-heading font-black text-white/5 select-none">{title.split(" ")[0]}</h4>
-          </div>
+          <img src={image} alt={title} className="relative z-10 w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"/>
+          <div className="absolute inset-0 bg-gradient-to-t from-background/70 to-transparent pointer-events-none" />
         </div>
       </div>
 
@@ -111,34 +111,46 @@ function ProjectCard({ title, description, tags, links, details, index }: Projec
 export function Projects() {
   const projects = [
     {
-      title: "Placement Diary",
-      description: "A centralized platform for students to track job applications, interview experiences, and preparation notes. Solves the chaos of scattered placement data.",
-      tags: ["React", "Node.js", "Express", "MongoDB", "Redux"],
-      links: { demo: "#", repo: "#" },
+      title: "Personal Placement Diary",
+      image: "/Placement_Diary.png",
+      description: "A full-stack web application that helps students manage their entire placement journey in one place — from applications to interview experiences and outcomes.",
+      tags: ["React", "Node.js", "Express", "MongoDB Atlas","JavaScript","Tailwind CSS"],
+      links: { demo: "#", repo: "https://github.com/VarshithSidhoju/Placement-Backend" },
       details: {
-        problem: "Students struggle to organize their placement journey across multiple spreadsheets, notes app, and emails, leading to missed opportunities and lost insights.",
-        solution: "Built a full-stack application providing a unified dashboard for tracking applications, documenting interview questions, and analyzing personal performance metrics.",
+        problem: "Students often rely on scattered spreadsheets, notes apps, and emails to track placements, making it difficult to stay organized, analyze progress, or learn from past interviews.",
+        solution: "Designed and built a centralized, full-stack platform that provides a single dashboard to track applications, document interview experiences, and visualize placement progress over time.",
         features: [
-          "Kanban-style application tracking board",
-          "Rich text editor for interview experiences",
-          "Analytics dashboard for application status",
-          "Role-based access (Student/Admin)"
+          "Kanban-style board to track application status across stages",
+          "Rich text editor to record interview questions and experiences",
+          "Analytics dashboard to visualize application outcomes",
+          "Role-based access for students and administrators"
         ]
       }
     },
     {
-      title: "EduGenius",
-      description: "A smart education platform enhancing learning through structured content and intelligent performance insights.",
-      tags: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Prisma"],
-      links: { demo: "#", repo: "#" },
+      title: "EduGenius AI-Powered Smart Study Companion",
+      image: "/Edugenius.png",
+      description: "An intelligent education platform focused on structured learning and performance insights to help students identify weak areas and improve effectively.",
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "FastAPI",
+        "Python",
+        "LLMs (OpenAI / Hugging Face)",
+        "RAG Architecture"
+      ],
+      
+      links: { demo: "#", repo:"https://github.com/VarshithSidhoju/Mini_Project_final_temp" },
       details: {
-        problem: "Traditional LMS platforms are often clunky and lack personalized insights for students to improve their weak areas.",
-        solution: "Designed a user-centric platform with intuitive navigation and data-driven insights to help students identify knowledge gaps.",
+        problem: "Traditional learning management systems often provide content delivery but lack meaningful insights that help students understand their learning gaps.",
+        solution: "Designed a modern, user-centric education platform that combines structured course content with data-driven performance insights to guide focused learning.",
+
         features: [
-          "Interactive course modules",
-          "Real-time progress tracking",
-          "Performance analytics visualizations",
-          "Responsive, mobile-first design"
+          "Interactive course modules with structured content flow",
+          "Real-time progress tracking for learners",
+          "Performance analytics and visual insights",
+          "Fully responsive, mobile-first user experience"
         ]
       }
     }

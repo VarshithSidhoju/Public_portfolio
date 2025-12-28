@@ -56,7 +56,7 @@ export default function Home() {
       </main>
       
       <footer className="py-8 text-center text-sm text-muted-foreground border-t border-white/5 relative z-10 bg-background">
-        <p>© {new Date().getFullYear()} Nagavarshith Siddoju. Built with React, Tailwind & Three.js.</p>
+        <p>© {new Date().getFullYear()} Nagavarshith Siddoju</p>
       </footer>
     </div>
   );
